@@ -7,13 +7,14 @@
  */
 function Find($target, $array)
 {
-    // write code here
+    // 二维数组获取 行数 和 列数
     $rows = count($array);
     $columns = count($array[0]);
 
     $rowVal = 0;
     $colVal = $columns-1;
 
+    //row and columns c
     while( $rowVal <$rows && $colVal >= 0 ) {
         if($array[$rowVal][$colVal] > $target) {
             $colVal = $colVal - 1;
@@ -26,3 +27,4 @@ function Find($target, $array)
 
     return false;
 }
+echo "fei";
